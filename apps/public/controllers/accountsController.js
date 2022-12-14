@@ -1,7 +1,7 @@
-const {User} = require('../../../data/models');
+
 const ResponseModel = require('../../../utilities/responseModel');
 const tokenHandler = require('../../../utilities/tokenHandler');
-
+const {User} = require('../../../data/models');
 // Login function.
 module.exports.login = async(req, res) => {
     const {email, password} = req.body;
